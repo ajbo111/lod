@@ -3,438 +3,382 @@
 
 -- Instances:
 
-local tr = Instance.new("Frame")
-local UICorner = Instance.new("UICorner")
-local TextLabel = Instance.new("TextLabel")
-local TextLabel_2 = Instance.new("TextLabel")
-local TextLabel_3 = Instance.new("TextLabel")
-local TextLabel_4 = Instance.new("TextLabel")
-local TextLabel_5 = Instance.new("TextLabel")
-local TextBox = Instance.new("TextBox")
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
 local TextButton = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
 local UICorner_2 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
 
 --Properties:
 
-tr.Name = "tr"
-tr.Parent = game.StarterGui.ScreenGui
-tr.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-tr.Position = UDim2.new(0.225454539, 0, 0.774127305, 0)
-tr.Size = UDim2.new(0, 421, 0, 152)
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-UICorner.Parent = tr
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(66, 0, 1)
+Frame.BorderColor3 = Color3.fromRGB(255, 0, 4)
+Frame.Position = UDim2.new(0.443030298, 0, 0.556468129, 0)
+Frame.Size = UDim2.new(0, 292, 0, 119)
 
-TextLabel.Parent = tr
-TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.BackgroundTransparency = 1.000
-TextLabel.Position = UDim2.new(0.0665083155, 0, 0.302631587, 0)
-TextLabel.Size = UDim2.new(0, 366, 0, 16)
-TextLabel.Font = Enum.Font.SourceSans
-TextLabel.Text = "Press Launch to activate TRIDENT startup system"
-TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel.TextScaled = true
-TextLabel.TextSize = 14.000
-TextLabel.TextWrapped = true
-
-TextLabel_2.Parent = tr
-TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_2.BackgroundTransparency = 1.000
-TextLabel_2.Position = UDim2.new(0.0665083155, 0, 0.302631587, 0)
-TextLabel_2.Size = UDim2.new(0, 366, 0, 16)
-TextLabel_2.Font = Enum.Font.SourceSans
-TextLabel_2.Text = "Press Launch to activate TRIDENT startup system"
-TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_2.TextScaled = true
-TextLabel_2.TextSize = 14.000
-TextLabel_2.TextWrapped = true
-
-TextLabel_3.Parent = tr
-TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_3.BackgroundTransparency = 1.000
-TextLabel_3.Position = UDim2.new(0.0665083155, 0, 0.302631587, 0)
-TextLabel_3.Size = UDim2.new(0, 366, 0, 16)
-TextLabel_3.Font = Enum.Font.SourceSans
-TextLabel_3.Text = "Press Launch to activate TRIDENT startup system"
-TextLabel_3.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_3.TextScaled = true
-TextLabel_3.TextSize = 14.000
-TextLabel_3.TextWrapped = true
-
-TextLabel_4.Parent = tr
-TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_4.BackgroundTransparency = 1.000
-TextLabel_4.Position = UDim2.new(0.0665083155, 0, 0.302631587, 0)
-TextLabel_4.Size = UDim2.new(0, 366, 0, 16)
-TextLabel_4.Font = Enum.Font.SourceSans
-TextLabel_4.Text = "Press Launch to activate TRIDENT startup system"
-TextLabel_4.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_4.TextScaled = true
-TextLabel_4.TextSize = 14.000
-TextLabel_4.TextWrapped = true
-
-TextLabel_5.Parent = tr
-TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_5.BackgroundTransparency = 1.000
-TextLabel_5.Position = UDim2.new(0.0665083155, 0, -0.0394736826, 0)
-TextLabel_5.Size = UDim2.new(0, 344, 0, 52)
-TextLabel_5.Font = Enum.Font.SourceSans
-TextLabel_5.Text = "TRIDENT"
-TextLabel_5.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_5.TextScaled = true
-TextLabel_5.TextSize = 14.000
-TextLabel_5.TextWrapped = true
-
-TextBox.Parent = tr
-TextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextBox.Position = UDim2.new(0.0403800458, 0, 0.815789461, 0)
-TextBox.Size = UDim2.new(0, 81, 0, 20)
-TextBox.Font = Enum.Font.SourceSans
-TextBox.Text = "VIP KEY HERE"
-TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextBox.TextSize = 14.000
-
-TextButton.Parent = tr
-TextButton.BackgroundColor3 = Color3.fromRGB(138, 138, 138)
-TextButton.Position = UDim2.new(0.263657957, 0, 0.618421078, 0)
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.Position = UDim2.new(0.157534242, 0, 0.285714298, 0)
 TextButton.Size = UDim2.new(0, 200, 0, 50)
 TextButton.Font = Enum.Font.SourceSans
-TextButton.Text = "Launch"
+TextButton.Text = "LAUNCH"
 TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton.TextScaled = true
 TextButton.TextSize = 14.000
 TextButton.TextWrapped = true
+
+UICorner.CornerRadius = UDim.new(0, 5)
+UICorner.Parent = TextButton
+
+UICorner_2.Parent = Frame
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.157534242, 0, -0.29411763, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 50)
+TextLabel.Font = Enum.Font.Garamond
+TextLabel.Text = "TRIDENT BETA"
+TextLabel.TextColor3 = Color3.fromRGB(255, 0, 4)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
 TextButton.MouseButton1Down:connect(function()
-while wait(0) do	
-			local args = {
-				[1] = "Cheeseburger",
-			}
-	
-			game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
-	
-			local args = {
-				[1] = "Cheeseburger",
-			}
-	
-			game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
-	
-			local args = {
-				[1] = "Cheeseburger",
-			}
-	
-			game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
-	
-			local args = {
-				[1] = "Cheeseburger",
-			}
-	
-			game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
-	
-			local args = {
-				[1] = "Cheeseburger",
-			}
-	
-			game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
-	
-			local args = {
-				[1] = "Cheeseburger",
-			}
-	
-			game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
-	
-			local args = {
-				[1] = "Cheeseburger",
-			}
-	
-			game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
-	
-			local args = {
-				[1] = "Cheeseburger",
-			}
-	
-			game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
-	
-			local args = {
-				[1] = "Cheeseburger",
-			}
-	
-			game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
-	
-			local args = {
-				[1] = "Cheeseburger",
-			}
-	
-			game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
-	
-			local args = {
-				[1] = "Cheeseburger",
-			}
-	
-			game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
-	
-			local args = {
-				[1] = "Cheeseburger",
-			}
-	
-			game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
-	
-			local args = {
-				[1] = "Cheeseburger",
-			}
-	
-			game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
-	
-			local args = {
-				[1] = "Cheeseburger",
-			}
-	
-			game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
-	
-			local args = {
-				[1] = "Cheeseburger",
-			}
-	
-			game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
-	
-			local args = {
-				[1] = "Cheeseburger",
-			}
-	
-			game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
-	
-			local args = {
-				[1] = "Cheeseburger",
-			}
-	
-			game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
-	
-			local args = {
-				[1] = "Cheeseburger",
-			}
-	
-			game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
-	
-			local args = {
-				[1] = "Cheeseburger",
-			}
-	
-			game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
-	
-			local args = {
-				[1] = "Cheeseburger",
-			}
-	
-			game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
-	
-			local args = {
-				[1] = "Cheeseburger",
-			}
-	
-			game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
-	
-			local args = {
-				[1] = "Cheeseburger",
-			}
-	
-			game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
-	
-			local args = {
-				[1] = "Cheeseburger",
-			}
-	
-			game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
-	
-			local args = {
-				[1] = "Cheeseburger",
-			}
-	
-			game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
-	
-			local args = {
-				[1] = "Cheeseburger",
-			}
-	
-			game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
-	
-			local args = {
-				[1] = "Cheeseburger",
-			}
-	
-			game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
-	
-			local args = {
-				[1] = "Cheeseburger",
-			}
-	
-			game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
-	
-			local args = {
-				[1] = "Cheeseburger",
-			}
-	
-			game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
-	
-			local args = {
-				[1] = "Cheeseburger",
-			}
-	
-			game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
-	
-			local args = {
-				[1] = "Cheeseburger",
-			}
-	
-			game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
-	
-			local args = {
-				[1] = "Cheeseburger",
-			}
-	
-			game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
-	
-			local args = {
-				[1] = "Cheeseburger",
-			}
-	
-			game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
-	
-			local args = {
-				[1] = "Cheeseburger",
-			}
-	
-			game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
-	
-			local args = {
-				[1] = "Cheeseburger",
-			}
-	
-			game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
-	
-			local args = {
-				[1] = "Cheeseburger",
-			}
-	
-			game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
-	
-			local args = {
-				[1] = "Cheeseburger",
-			}
-	
-			game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
-	
-			local args = {
-				[1] = "Cheeseburger",
-			}
-	
-			game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
-	
-			local args = {
-				[1] = "Cheeseburger",
-			}
-	
-			game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
-	
-			local args = {
-				[1] = "Cheeseburger",
-			}
-	
-			game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
-	
-			local args = {
-				[1] = "Cheeseburger",
-			}
-	
-			game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
-	
-			local args = {
-				[1] = "Cheeseburger",
-			}
-	
-			game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
-	
-			local args = {
-				[1] = "Cheeseburger",
-			}
-	
-			game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
-	
-			local args = {
-				[1] = "Cheeseburger",
-			}
-	
-			game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
-	
-			local args = {
-				[1] = "Cheeseburger",
-			}
-	
-			game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
-	
-			local args = {
-				[1] = "Cheeseburger",
-			}
-	
-			game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
-	
-			local args = {
-				[1] = "Cheeseburger",
-			}
-	
-			game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
-	
-			local args = {
-				[1] = "Cheeseburger",
-			}
-	
-			game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
-	
-			local args = {
-				[1] = "Cheeseburger",
-			}
-	
-			game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
-	
-			local args = {
-				[1] = "Cheeseburger",
-			}
-	
-			game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
-	
-			local args = {
-				[1] = "Cheeseburger",
-			}
-	
-			game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
-	
-			local args = {
-				[1] = "Cheeseburger",
-			}
-	
-			game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
-	
-			local args = {
-				[1] = "Cheeseburger",
-			}
-	
-			game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
-	
-			local args = {
-				[1] = "Cheeseburger",
-			}
-	
-			game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
-	
-			local args = {
-				[1] = "Cheeseburger",
-			}
-	
-			game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
-Wait(100)
+while wait(0) do
+		local args = {
+			[1] = "Cheeseburger",
+		}
+
+		game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
+
+		local args = {
+			[1] = "Cheeseburger",
+		}
+
+		game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
+
+		local args = {
+			[1] = "Cheeseburger",
+		}
+
+		game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
+
+		local args = {
+			[1] = "Cheeseburger",
+		}
+
+		game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
+
+		local args = {
+			[1] = "Cheeseburger",
+		}
+
+		game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
+
+		local args = {
+			[1] = "Cheeseburger",
+		}
+
+		game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
+
+		local args = {
+			[1] = "Cheeseburger",
+		}
+
+		game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
+
+		local args = {
+			[1] = "Cheeseburger",
+		}
+
+		game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
+
+		local args = {
+			[1] = "Cheeseburger",
+		}
+
+		game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
+
+		local args = {
+			[1] = "Cheeseburger",
+		}
+
+		game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
+
+		local args = {
+			[1] = "Cheeseburger",
+		}
+
+		game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
+
+		local args = {
+			[1] = "Cheeseburger",
+		}
+
+		game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
+
+		local args = {
+			[1] = "Cheeseburger",
+		}
+
+		game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
+
+		local args = {
+			[1] = "Cheeseburger",
+		}
+
+		game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
+
+		local args = {
+			[1] = "Cheeseburger",
+		}
+
+		game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
+
+		local args = {
+			[1] = "Cheeseburger",
+		}
+
+		game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
+
+		local args = {
+			[1] = "Cheeseburger",
+		}
+
+		game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
+
+		local args = {
+			[1] = "Cheeseburger",
+		}
+
+		game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
+
+		local args = {
+			[1] = "Cheeseburger",
+		}
+
+		game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
+
+		local args = {
+			[1] = "Cheeseburger",
+		}
+
+		game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
+
+		local args = {
+			[1] = "Cheeseburger",
+		}
+
+		game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
+
+		local args = {
+			[1] = "Cheeseburger",
+		}
+
+		game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
+
+		local args = {
+			[1] = "Cheeseburger",
+		}
+
+		game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
+
+		local args = {
+			[1] = "Cheeseburger",
+		}
+
+		game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
+
+		local args = {
+			[1] = "Cheeseburger",
+		}
+
+		game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
+
+		local args = {
+			[1] = "Cheeseburger",
+		}
+
+		game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
+
+		local args = {
+			[1] = "Cheeseburger",
+		}
+
+		game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
+
+		local args = {
+			[1] = "Cheeseburger",
+		}
+
+		game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
+
+		local args = {
+			[1] = "Cheeseburger",
+		}
+
+		game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
+
+		local args = {
+			[1] = "Cheeseburger",
+		}
+
+		game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
+
+		local args = {
+			[1] = "Cheeseburger",
+		}
+
+		game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
+
+		local args = {
+			[1] = "Cheeseburger",
+		}
+
+		game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
+
+		local args = {
+			[1] = "Cheeseburger",
+		}
+
+		game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
+
+		local args = {
+			[1] = "Cheeseburger",
+		}
+
+		game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
+
+		local args = {
+			[1] = "Cheeseburger",
+		}
+
+		game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
+
+		local args = {
+			[1] = "Cheeseburger",
+		}
+
+		game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
+
+		local args = {
+			[1] = "Cheeseburger",
+		}
+
+		game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
+
+		local args = {
+			[1] = "Cheeseburger",
+		}
+
+		game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
+
+		local args = {
+			[1] = "Cheeseburger",
+		}
+
+		game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
+
+		local args = {
+			[1] = "Cheeseburger",
+		}
+
+		game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
+
+		local args = {
+			[1] = "Cheeseburger",
+		}
+
+		game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
+
+		local args = {
+			[1] = "Cheeseburger",
+		}
+
+		game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
+
+		local args = {
+			[1] = "Cheeseburger",
+		}
+
+		game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
+
+		local args = {
+			[1] = "Cheeseburger",
+		}
+
+		game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
+
+		local args = {
+			[1] = "Cheeseburger",
+		}
+
+		game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
+
+		local args = {
+			[1] = "Cheeseburger",
+		}
+
+		game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
+
+		local args = {
+			[1] = "Cheeseburger",
+		}
+
+		game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
+
+		local args = {
+			[1] = "Cheeseburger",
+		}
+
+		game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
+
+		local args = {
+			[1] = "Cheeseburger",
+		}
+
+		game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
+
+		local args = {
+			[1] = "Cheeseburger",
+		}
+
+		game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
+
+		local args = {
+			[1] = "Cheeseburger",
+		}
+
+		game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
+
+		local args = {
+			[1] = "Cheeseburger",
+		}
+
+		game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
+
+		local args = {
+			[1] = "Cheeseburger",
+		}
+
+		game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
+
+		local args = {
+			[1] = "Cheeseburger",
+		}
+
+		game:GetService("ReplicatedStorage").PurchaseFood:InvokeServer(unpack(args))
+	end
+	
+	wait(100)
 	game.Players.LocalPlayer:Kick("\n You have been caught exploiting | We use tools to detect GUIs being changed inorder to hack. | Your money has thus been RESET. | If you are caught again, you will be BANNED. ")
-
-end
-UICorner_2.Parent = TextButton
-
-
-
-end
-coroutine.wrap(EUNZDE_fake_script)()
+	
+	
+	
+end)
